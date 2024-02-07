@@ -47,7 +47,7 @@
 									<h2>Work</h2>
 								</header>
 								<p>
-									Below are some projects that I worked on that showcases my skills in Excel, Tableau, SQL, and Python.
+									Below are some projects that I worked on that showcases my skills in Excel, Tableau, SQL, and Python. More to come!
 								</p>
 								<section>
 									<div class="row">
@@ -69,33 +69,6 @@
 												 Through SQL queries, we investigated various aspects such as the distribution of artists' works across different countries, the prevalence of cubist paintings in museums, and the most frequently painted subjects for different painting styles. 
 												 The analysis provided insights into trends within the art world, including the popularity of certain artistic movements and subjects across different regions and time periods.</p>
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
-										</div>
 									</div>
 								</section>
 							</article>
@@ -105,23 +78,23 @@
 								<header>
 									<h2>Contact Me</h2>
 								</header>
-								<form action="#" method="post">
+								<form action="mailto:Austin.Adams1094@gmail.com" method="post">
 									<div>
 										<div class="row">
 											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
+												<input type="text" name="name" placeholder="Name" required/>
 											</div>
 											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
+												<input type="email" name="email" placeholder="Email" required/>
 											</div>
 											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
+												<input type="text" name="subject" placeholder="Subject" required/>
 											</div>
 											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
+												<textarea id="message" placeholder="Message" rows="6" required></textarea>
 											</div>
 											<div class="col-12">
-												<input type="submit" value="Send Message" />
+												<input type="submit" value="Send Message" onclick="sendEmail()"/>
 											</div>
 										</div>
 									</div>
