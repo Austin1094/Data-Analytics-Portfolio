@@ -209,24 +209,4 @@
 
 		}
 
-		// Email
-		function sendEmail() {
-			var name = document.getElementById('name').value;
-			var email = document.getElementById('email').value;
-			var subject = document.getElementById('subject').value;
-			var message = document.getElementById('message').value;
-	
-			var body = "Name: " + name + "\n" +
-					   "Email: " + email + "\n" +
-					   "Subject: " + subject + "\n" +
-					   "Message: " + message;
-	
-			window.location.href = "mailto:Austin.Adams1094@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-		}
-
-		$(document).on('click', '#send-button', function(event) {
-			event.preventDefault();
-			sendEmail();
-		});
-
 })(jQuery);
